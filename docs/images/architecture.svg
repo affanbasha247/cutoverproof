@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900" viewBox="0 0 1400 900" role="img" aria-label="CutoverProof architecture">
+  <rect width="1400" height="900" fill="#F7F8FB"/>
+
+  <text x="72" y="80" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="34" font-weight="700" fill="#1D2836">CutoverProof architecture</text>
+  <text x="72" y="112" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="16" fill="#607086">Phase 1 is a working local evidence surface. The authorization engines arrive in later phases.</text>
+
+  <g font-family="Helvetica Neue, Helvetica, Arial, sans-serif">
+    <rect x="72" y="160" width="380" height="222" rx="8" fill="#FFFFFF" stroke="#D8DEE7"/>
+    <text x="96" y="194" font-size="13" font-weight="700" fill="#4C8DFF">PRESENTATION</text>
+    <text x="96" y="226" font-size="20" font-weight="700" fill="#1D2836">React dashboard</text>
+    <text x="96" y="254" font-size="14" fill="#607086">Overview · Configuration · Simulation</text>
+    <text x="96" y="278" font-size="14" fill="#607086">Verification · Planner · Reports</text>
+    <text x="96" y="318" font-size="12" fill="#8A97A8">Vite · TypeScript · Tailwind CSS</text>
+    <text x="96" y="340" font-size="12" fill="#8A97A8">Local API proxy at /api</text>
+    <text x="96" y="362" font-size="12" fill="#8A97A8">No seeded metrics</text>
+
+    <rect x="508" y="160" width="380" height="222" rx="8" fill="#FFFFFF" stroke="#D8DEE7"/>
+    <text x="532" y="194" font-size="13" font-weight="700" fill="#4C8DFF">API</text>
+    <text x="532" y="226" font-size="20" font-weight="700" fill="#1D2836">FastAPI service</text>
+    <text x="532" y="254" font-size="14" fill="#607086">Health · Overview · Configs · Reports</text>
+    <text x="532" y="278" font-size="14" fill="#607086">Explicit 501 phase placeholders</text>
+    <text x="532" y="318" font-size="12" fill="#8A97A8">Pydantic response models</text>
+    <text x="532" y="340" font-size="12" fill="#8A97A8">CORS · local simulation mode</text>
+    <text x="532" y="362" font-size="12" fill="#8A97A8">12 backend tests</text>
+
+    <rect x="944" y="160" width="384" height="222" rx="8" fill="#FFFFFF" stroke="#D8DEE7"/>
+    <text x="968" y="194" font-size="13" font-weight="700" fill="#4C8DFF">LOCAL STATE</text>
+    <text x="968" y="226" font-size="20" font-weight="700" fill="#1D2836">Filesystem JSON</text>
+    <text x="968" y="254" font-size="14" fill="#607086">data/policies · data/scenarios</text>
+    <text x="968" y="278" font-size="14" fill="#607086">data/plans · data/reports</text>
+    <text x="968" y="318" font-size="12" fill="#8A97A8">No database in Phase 1</text>
+    <text x="968" y="340" font-size="12" fill="#8A97A8">No AWS credentials or calls</text>
+    <text x="968" y="362" font-size="12" fill="#8A97A8">Reports are read as local evidence</text>
+  </g>
+
+  <g stroke="#C3CCD8" stroke-width="1.5" fill="none">
+    <path d="M452 271H508"/>
+    <path d="m500 266 8 5-8 5"/>
+    <path d="M888 271H944"/>
+    <path d="m936 266 8 5-8 5"/>
+  </g>
+
+  <g font-family="Helvetica Neue, Helvetica, Arial, sans-serif">
+    <text x="72" y="444" font-size="13" font-weight="700" fill="#607086">PLANNED VERIFICATION PIPELINE</text>
+    <text x="72" y="468" font-size="13" fill="#8A97A8">Each stage is added behind the API once its semantics and tests are real.</text>
+  </g>
+
+  <g font-family="Helvetica Neue, Helvetica, Arial, sans-serif">
+    <rect x="72" y="500" width="228" height="120" rx="8" fill="#FFFFFF" stroke="#C3CCD8" stroke-dasharray="6 5"/>
+    <text x="90" y="530" font-size="12" font-weight="700" fill="#4C8DFF">PHASE 2</text>
+    <text x="90" y="558" font-size="16" font-weight="700" fill="#1D2836">IAM reader</text>
+    <text x="90" y="580" font-size="12" fill="#607086">Schema, loader, diff,</text>
+    <text x="90" y="598" font-size="12" fill="#607086">effective permissions</text>
+
+    <rect x="330" y="500" width="228" height="120" rx="8" fill="#FFFFFF" stroke="#C3CCD8" stroke-dasharray="6 5"/>
+    <text x="348" y="530" font-size="12" font-weight="700" fill="#4C8DFF">PHASES 2 + 4</text>
+    <text x="348" y="558" font-size="16" font-weight="700" fill="#1D2836">Simulator</text>
+    <text x="348" y="580" font-size="12" fill="#607086">Trust chains, sessions,</text>
+    <text x="348" y="598" font-size="12" fill="#607086">grants, transitions</text>
+
+    <rect x="588" y="500" width="228" height="120" rx="8" fill="#FFFFFF" stroke="#C3CCD8" stroke-dasharray="6 5"/>
+    <text x="606" y="530" font-size="12" font-weight="700" fill="#8B5CF6">PHASE 3</text>
+    <text x="606" y="558" font-size="16" font-weight="700" fill="#1D2836">Z3 verifier</text>
+    <text x="606" y="580" font-size="12" fill="#607086">SAT / UNSAT / UNKNOWN</text>
+    <text x="606" y="598" font-size="12" fill="#607086">counterexample paths</text>
+
+    <rect x="846" y="500" width="228" height="120" rx="8" fill="#FFFFFF" stroke="#C3CCD8" stroke-dasharray="6 5"/>
+    <text x="864" y="530" font-size="12" font-weight="700" fill="#D69E2E">PHASE 5</text>
+    <text x="864" y="558" font-size="16" font-weight="700" fill="#1D2836">Safe planner</text>
+    <text x="864" y="580" font-size="12" fill="#607086">Sequence search,</text>
+    <text x="864" y="598" font-size="12" fill="#607086">re-verification</text>
+
+    <rect x="1104" y="500" width="224" height="120" rx="8" fill="#FFFFFF" stroke="#C3CCD8" stroke-dasharray="6 5"/>
+    <text x="1122" y="530" font-size="12" font-weight="700" fill="#4C8DFF">PHASE 6</text>
+    <text x="1122" y="558" font-size="16" font-weight="700" fill="#1D2836">Report writer</text>
+    <text x="1122" y="580" font-size="12" fill="#607086">Evidence, assumptions,</text>
+    <text x="1122" y="598" font-size="12" fill="#607086">recommended corrections</text>
+  </g>
+
+  <g stroke="#C3CCD8" stroke-width="1.5" fill="none">
+    <path d="M300 560H330"/>
+    <path d="m322 555 8 5-8 5"/>
+    <path d="M558 560H588"/>
+    <path d="m580 555 8 5-8 5"/>
+    <path d="M816 560H846"/>
+    <path d="m838 555 8 5-8 5"/>
+    <path d="M1074 560H1104"/>
+    <path d="m1096 555 8 5-8 5"/>
+  </g>
+
+  <g font-family="Helvetica Neue, Helvetica, Arial, sans-serif">
+    <rect x="72" y="690" width="1256" height="112" rx="8" fill="#FFFFFF" stroke="#D8DEE7"/>
+    <text x="96" y="724" font-size="13" font-weight="700" fill="#E05656">BOUNDARY</text>
+    <text x="96" y="754" font-size="16" font-weight="700" fill="#1D2836">Local simulation only</text>
+    <text x="96" y="778" font-size="13" fill="#607086">No AWS API calls, no Terraform execution, no remote deployment. “Safe” means no modeled attack path remains under the documented assumptions.</text>
+    <text x="96" y="798" font-size="12" fill="#8A97A8">Model scope and simplifications: docs/assumptions.md</text>
+  </g>
+
+  <g font-family="Helvetica Neue, Helvetica, Arial, sans-serif">
+    <line x1="72" y1="848" x2="130" y2="848" stroke="#4C8DFF" stroke-width="2"/>
+    <text x="140" y="853" font-size="12" fill="#607086">Implemented in Phase 1</text>
+    <line x1="306" y1="848" x2="364" y2="848" stroke="#C3CCD8" stroke-width="2" stroke-dasharray="6 5"/>
+    <text x="374" y="853" font-size="12" fill="#607086">Planned, not yet implemented</text>
+  </g>
+</svg>

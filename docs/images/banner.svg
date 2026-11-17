@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="520" viewBox="0 0 1600 520" role="img" aria-label="CutoverProof banner: Prove the access is gone.">
+  <defs>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M48 0H0V48" fill="none" stroke="#FFFFFF" stroke-opacity=".035"/>
+    </pattern>
+  </defs>
+
+  <rect width="1600" height="520" fill="#0D1524"/>
+  <rect width="1600" height="520" fill="url(#grid)"/>
+  <rect width="1600" height="4" fill="#4C8DFF"/>
+
+  <g>
+    <rect x="88" y="80" width="44" height="44" rx="6" fill="#111C2E" stroke="#4C8DFF" stroke-opacity=".65"/>
+    <path d="M118 88 126 96v8" fill="none" stroke="#4C8DFF" stroke-width="2" stroke-linecap="round"/>
+    <text x="110" y="108" text-anchor="middle" font-family="Menlo, Monaco, Consolas, monospace" font-size="16" font-weight="700" letter-spacing="-1.5" fill="#7FB0FF">CP</text>
+    <text x="148" y="109" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="25" font-weight="600" fill="#F5F7FB">CutoverProof</text>
+  </g>
+
+  <text x="88" y="235" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="72" font-weight="700" letter-spacing="-2.5" fill="#F5F7FB">Prove the access is gone.</text>
+  <text x="88" y="288" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="22" fill="#A8B6C8">A local-first workshop for verifying that AWS IAM</text>
+  <text x="88" y="320" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="22" fill="#A8B6C8">cutovers do not leave unauthorized paths behind.</text>
+
+  <text x="88" y="450" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="15" fill="#708096">Phase 1 · local simulation · no AWS calls</text>
+
+  <g>
+    <rect x="940" y="88" width="572" height="344" rx="10" fill="#111C2E" stroke="#2A3A50"/>
+    <text x="968" y="126" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#7F8EA3">Modeled authorization path</text>
+
+    <rect x="968" y="152" width="188" height="64" rx="6" fill="#0D1524" stroke="#2A3A50"/>
+    <text x="984" y="178" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#F5F7FB">employee-a</text>
+    <text x="984" y="198" font-family="Menlo, Monaco, Consolas, monospace" font-size="11" fill="#7F8EA3">IAM user</text>
+
+    <rect x="1256" y="152" width="228" height="64" rx="6" fill="#0D1524" stroke="#2A3A50"/>
+    <text x="1272" y="178" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#F5F7FB">DataReader role</text>
+    <text x="1272" y="198" font-family="Menlo, Monaco, Consolas, monospace" font-size="11" fill="#7F8EA3">assumed session</text>
+
+    <rect x="1256" y="292" width="228" height="64" rx="6" fill="#0D1524" stroke="#2A3A50"/>
+    <text x="1272" y="318" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#F5F7FB">sensitive object</text>
+    <text x="1272" y="338" font-family="Menlo, Monaco, Consolas, monospace" font-size="11" fill="#7F8EA3">S3 object</text>
+
+    <rect x="968" y="292" width="188" height="64" rx="6" fill="#0D1524" stroke="#2A3A50"/>
+    <text x="984" y="318" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#F5F7FB">customer key</text>
+    <text x="984" y="338" font-family="Menlo, Monaco, Consolas, monospace" font-size="11" fill="#7F8EA3">KMS key</text>
+
+    <path d="M1156 184H1256" stroke="#4C8DFF" stroke-width="2"/>
+    <path d="m1248 179 8 5-8 5" fill="none" stroke="#4C8DFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="1176" y="175" font-family="Menlo, Monaco, Consolas, monospace" font-size="10" fill="#7FB0FF">AssumeRole</text>
+
+    <path d="M1370 216V292" stroke="#4C8DFF" stroke-width="2"/>
+    <path d="m1365 284 5 8 5-8" fill="none" stroke="#4C8DFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="1382" y="258" font-family="Menlo, Monaco, Consolas, monospace" font-size="10" fill="#7FB0FF">GetObject</text>
+
+    <path d="M1256 324H1156" stroke="#4C8DFF" stroke-width="2"/>
+    <path d="m1164 319-8 5 8 5" fill="none" stroke="#4C8DFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="1166" y="315" font-family="Menlo, Monaco, Consolas, monospace" font-size="10" fill="#7FB0FF">Decrypt</text>
+
+    <path d="M1062 216V260H1248" fill="none" stroke="#E05656" stroke-width="1.5" stroke-dasharray="5 5"/>
+    <path d="m1240 255 8 5-8 5" fill="none" stroke="#E05656" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="1062" y="251" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11" fill="#E05656">direct policy removed</text>
+
+    <path d="M968 398H1484" stroke="#2A3A50"/>
+    <text x="968" y="418" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11" fill="#7F8EA3">The changed permission is not the whole model.</text>
+  </g>
+</svg>

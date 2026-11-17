@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640" role="img" aria-label="CutoverProof social preview">
+  <defs>
+    <pattern id="social-grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#FFFFFF" stroke-opacity=".03"/>
+    </pattern>
+  </defs>
+
+  <rect width="1280" height="640" fill="#0D1524"/>
+  <rect width="1280" height="640" fill="url(#social-grid)"/>
+  <rect width="1280" height="4" fill="#4C8DFF"/>
+
+  <g>
+    <rect x="72" y="64" width="38" height="38" rx="5" fill="#111C2E" stroke="#4C8DFF" stroke-opacity=".65"/>
+    <text x="91" y="88" text-anchor="middle" font-family="Menlo, Monaco, Consolas, monospace" font-size="14" font-weight="700" letter-spacing="-1" fill="#7FB0FF">CP</text>
+    <text x="126" y="91" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="22" font-weight="600" fill="#F5F7FB">CutoverProof</text>
+  </g>
+
+  <text x="72" y="238" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="58" font-weight="700" letter-spacing="-2" fill="#F5F7FB">Prove the access is gone.</text>
+  <text x="72" y="294" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="22" fill="#A8B6C8">Temporal authorization verification for</text>
+  <text x="72" y="325" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="22" fill="#A8B6C8">AWS IAM cutovers. Local. Model-scoped.</text>
+
+  <g transform="translate(72 428)">
+    <line x1="0" y1="0" x2="1136" y2="0" stroke="#2A3A50"/>
+    <g>
+      <path d="M0 -5 5 0 0 5 -5 0Z" fill="#7FB0FF" stroke="#4C8DFF"/>
+      <text x="0" y="34" text-anchor="middle" font-family="Menlo, Monaco, Consolas, monospace" font-size="11" fill="#7F8EA3">Phase 2</text>
+      <text x="0" y="59" text-anchor="middle" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12" fill="#A8B6C8">Read IAM</text>
+    </g>
+    <g transform="translate(284 0)">
+      <path d="M0 -5 5 0 0 5 -5 0Z" fill="#7FB0FF" stroke="#4C8DFF"/>
+      <text x="0" y="34" text-anchor="middle" font-family="Menlo, Monaco, Consolas, monospace" font-size="11" fill="#7F8EA3">Phases 2–4</text>
+      <text x="0" y="59" text-anchor="middle" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12" fill="#A8B6C8">Simulate paths</text>
+    </g>
+    <g transform="translate(568 0)">
+      <path d="M0 -5 5 0 0 5 -5 0Z" fill="#C4B5FD" stroke="#8B5CF6"/>
+      <text x="0" y="34" text-anchor="middle" font-family="Menlo, Monaco, Consolas, monospace" font-size="11" fill="#7F8EA3">Phase 3</text>
+      <text x="0" y="59" text-anchor="middle" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12" fill="#A8B6C8">Verify with Z3</text>
+    </g>
+    <g transform="translate(852 0)">
+      <path d="M0 -5 5 0 0 5 -5 0Z" fill="#F5D08A" stroke="#D69E2E"/>
+      <text x="0" y="34" text-anchor="middle" font-family="Menlo, Monaco, Consolas, monospace" font-size="11" fill="#7F8EA3">Phase 5</text>
+      <text x="0" y="59" text-anchor="middle" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12" fill="#A8B6C8">Plan safely</text>
+    </g>
+    <g transform="translate(1136 0)">
+      <path d="M0 -5 5 0 0 5 -5 0Z" fill="#7FB0FF" stroke="#4C8DFF"/>
+      <text x="0" y="34" text-anchor="middle" font-family="Menlo, Monaco, Consolas, monospace" font-size="11" fill="#7F8EA3">Phase 6</text>
+      <text x="0" y="59" text-anchor="middle" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12" fill="#A8B6C8">Write report</text>
+    </g>
+  </g>
+
+  <text x="72" y="568" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="14" fill="#708096">Phase 1 · local simulation · no AWS calls</text>
+  <text x="1208" y="568" text-anchor="end" font-family="Menlo, Monaco, Consolas, monospace" font-size="12" fill="#4C8DFF">github.com/affanbasha247/cutoverproof</text>
+</svg>

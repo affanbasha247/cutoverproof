@@ -1,0 +1,52 @@
+name: "Feature request"
+description: "Propose a scoped improvement to the model, API, or interface"
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Large changes to the authorization model should start here so the semantics can be discussed before implementation. See the roadmap and `docs/assumptions.md` first.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What is missing or difficult today?
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed change
+      description: Describe the behavior and the API or UI surface it affects.
+    validations:
+      required: true
+
+  - type: textarea
+    id: model
+    attributes:
+      label: Model impact
+      description: Which IAM, STS, S3, or KMS assumptions change? What remains out of scope?
+      placeholder: Describe any new authorization rules, simplifications, or failure modes.
+    validations:
+      required: false
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Smaller changes or existing approaches you considered.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Scope check
+      options:
+        - label: This request does not require fabricated analysis results or unverified security claims.
+          required: true
+        - label: This request can be implemented locally without AWS credentials or remote deployment.
+          required: true

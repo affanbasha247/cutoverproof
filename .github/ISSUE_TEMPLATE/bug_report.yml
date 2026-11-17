@@ -1,0 +1,58 @@
+name: "Bug report"
+description: "Report a reproducible problem in CutoverProof"
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a bug. Please keep the report reproducible and remove credentials, account identifiers, or sensitive report contents before submitting.
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: What happened, and what did you expect instead?
+      placeholder: A short description of the problem.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Give the smallest sequence that reproduces the issue.
+      placeholder: |
+        1. Start the backend with ...
+        2. Open ...
+        3. See ...
+    validations:
+      required: true
+
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: Operating system, Python version, Node version, browser, and commit.
+      placeholder: macOS 15, Python 3.9.6, Node 24, Safari, commit 81668e4
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant output
+      description: Paste logs or screenshots only after removing sensitive values.
+      render: shell
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Safety check
+      options:
+        - label: I removed tokens, credentials, account identifiers, and sensitive data from this report.
+          required: true
+        - label: I checked the existing issues and the documented Phase 1 limitations.
+          required: true

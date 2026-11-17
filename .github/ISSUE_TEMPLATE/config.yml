@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Security report
+    url: https://github.com/affanbasha247/cutoverproof/security/advisories/new
+    about: Report a vulnerability privately instead of opening a public issue.
+  - name: Architecture and assumptions
+    url: https://github.com/affanbasha247/cutoverproof/blob/main/docs/assumptions.md
+    about: Read the documented authorization subset before proposing model changes.
