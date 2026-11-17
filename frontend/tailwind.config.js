@@ -1,0 +1,41 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  theme: {
+    extend: {
+      colors: {
+        paper: "var(--color-paper)",
+        "paper-2": "var(--color-paper-2)",
+        "paper-3": "var(--color-paper-3)",
+        canvas: "var(--color-canvas)",
+        ink: "var(--color-ink)",
+        "ink-2": "var(--color-ink-2)",
+        muted: "var(--color-muted)",
+        rule: "var(--color-rule)",
+        "rule-2": "var(--color-rule-2)",
+        graphite: "var(--color-graphite)",
+        "graphite-2": "var(--color-graphite-2)",
+        "graphite-ink": "var(--color-graphite-ink)",
+        "graphite-muted": "var(--color-graphite-muted)",
+        accent: "var(--color-accent)",
+        "accent-2": "var(--color-accent-2)",
+        "accent-wash": "var(--color-accent-wash)",
+        "accent-ink": "var(--color-accent-ink)",
+        focus: "var(--color-focus)",
+        success: "var(--color-success)",
+        error: "var(--color-error)",
+        warning: "var(--color-warning)",
+        info: "var(--color-info)",
+        "info-wash": "var(--color-info-wash)",
+        verify: "var(--color-verify)",
+        "verify-wash": "var(--color-verify-wash)",
+      },
+      fontFamily: {
+        display: ["var(--font-display)"],
+        sans: ["var(--font-body)"],
+        mono: ["var(--font-outlier)"],
+      },
+    },
+  },
+  plugins: [],
+};

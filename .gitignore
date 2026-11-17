@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Frontend
+node_modules/
+dist/
+*.local
+
+# Environment and editor files
+.env
+.env.*
+.DS_Store
+.vscode/
+.idea/
+
+# Hallmark design-run artifacts
+.hallmark/
+
+# Local analysis output (keep the directories themselves)
+data/reports/*.json
+!data/reports/.gitkeep
+
+# Logs
+*.log
